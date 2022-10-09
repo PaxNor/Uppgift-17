@@ -1,0 +1,150 @@
+﻿@page "/Dashboard"
+
+<PageTitle>Dashboard</PageTitle>
+
+    <!-- content -->
+    <div class="container mt-5">
+        <h2>Dashboard</h2>
+        <p class="text-secondary"><em>Overview of your Internet of Things</em></p>
+
+        <div class="row mt-5">
+
+            <!-- stats -->
+            <div class="col-3">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <div class="pb-3">
+                            <h4 class="card-title mb-0">
+                                <i class="bi-bar-chart-fill"></i>
+                                Daily Stats
+                            </h4>
+                            <p class="card-text text-muted">With supporting text</p>
+                        </div>
+
+                        <div class="row mt-4">
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-primary" disabled>
+                                    <i class="bi-stack icon-white"></i>
+                                </button>
+                            </div>
+                            <div class="col-8">
+                                <h6 class="m-0">Total Devices</h6>
+                                <p>Total Devices</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-end"><strong>8</strong></p>
+                            </div>
+                        </div>
+
+                        <!-- more rows for testing -->
+                        <div class="row">
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-primary" disabled>
+                                    <i class="bi-stack icon-white"></i>
+                                </button>
+                            </div>
+                            <div class="col-8">
+                                <h6 class="m-0">New Devices</h6>
+                                <p>Number of new devices</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-end"><strong>8</strong></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <button type="submit" class="btn btn-primary" disabled>
+                                    <i class="bi-stack icon-white"></i>
+                                </button>
+                            </div>
+                            <div class="col-8">
+                                <h6 class="m-0">C2D Count</h6>
+                                <p>Cloud to Device messages</p>
+                            </div>
+                            <div class="col">
+                                <p class="text-end"><strong>43</strong></p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- index -->
+            <div class="col">
+                <div class="card shadow">
+                    <div class="card-body">
+
+                        <div class="row pb-3">
+                            <div class="col">
+                                <h4 class="card-title mb-0">List of Devices</h4>
+                                <p class="card-text text-muted">With supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="col-2">
+                                <a href="#" class="btn btn-primary float-end">New Device</a>
+                            </div>
+                        </div>
+
+                        <table class="table mt-3">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><i class="bi-stack me-2"></i>Device ID</th>
+                                    <th scope="col">Location</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Type</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col"></th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td><i class="bi-stack me-2"></i>73259e61-766c-4c19-c4f4-63aca4ae4ac9</td>
+                                    <td>New York</td>
+                                    <td>2022-10-05</td>
+                                    <td>Weather Sensor</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-success btn-sm" disabled>
+                                            Online                                            
+                                        </button>        
+                                    </td>
+                                    <td>
+                                        <i class="bi-chat-left-dots-fill me-2"></i>
+                                        <i class="bi-pencil-fill me-2"></i>
+                                        <i class="bi-trash-fill"></i>
+                                    </td>
+                                </tr>
+
+                                <!-- second row for testing -->
+                                <tr>
+                                    <td><i class="bi-stack me-2"></i>73259e61-766c-4c19-c4f4-63aca4ae4ac9</td>
+                                    <td>Stockholm</td>
+                                    <td>2022-10-05</td>
+                                    <td>Weather Sensor</td>
+                                    <td>
+                                        <button type="submit" class="btn btn-danger btn-sm" disabled>
+                                            Offline                                            
+                                        </button>        
+                                    </td>
+                                    <td>
+                                        <i class="bi-chat-left-dots-fill me-2"></i>
+                                        <i class="bi-pencil-fill me-2"></i>
+                                        <i class="bi-trash-fill"></i>
+                                    </td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+@code {
+
+}
