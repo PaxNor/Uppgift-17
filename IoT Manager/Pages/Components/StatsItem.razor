@@ -1,0 +1,23 @@
+﻿<div class="row mt-0">
+    <div class="col-2">
+        <button type="submit" class="btn btn-primary" disabled>
+            <i class="bi-stack icon-white"></i>
+        </button>
+    </div>
+    <div class="col-8">
+        <h6 class="m-0">@Title</h6>
+        <p>@LeadIn</p>
+    </div>
+    <div class="col">
+        <p class="text-end"><strong>@Value</strong></p>
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string? Title { get; set; }
+    [Parameter]
+    public string? LeadIn { get; set; }
+    [Parameter]
+    public string? Value { get; set; }
+}
