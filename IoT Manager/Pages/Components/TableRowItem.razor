@@ -1,0 +1,47 @@
+﻿<tr>
+    <td><i class="bi-stack me-2"></i>@UUID</td>
+    <td>@Location</td>
+    <td>@Date</td>
+    <td>@Type</td>
+    <td>
+        <button type="submit" class="btn @buttonType btn-sm" disabled>
+            @statusString                                            
+        </button>        
+    </td>
+    <td>
+        <i class="bi-chat-left-dots-fill me-2"></i>
+        <i class="bi-pencil-fill me-2"></i>
+        <i class="bi-trash-fill"></i>
+    </td>
+</tr>
+
+@code {
+    private string? buttonType;
+    private string? statusString;
+    private bool _isOnLine;
+
+    [Parameter]
+    public string? UUID { get; set; }
+    [Parameter]
+    public string? Location { get; set; }
+    [Parameter]
+    public string? Date { get; set; }
+    [Parameter]
+    public string? Type { get; set; }
+    [Parameter]
+    public bool IsOnline {
+        get => _isOnLine;
+        set {
+            if(value == false) {
+                buttonType = "btn-danger";
+                statusString = "Offline";
+                _isOnLine = false;
+            }
+            else {
+                buttonType = "btn-success";
+                statusString = "Online";
+                _isOnLine = true;
+            }
+        } 
+    }
+}
