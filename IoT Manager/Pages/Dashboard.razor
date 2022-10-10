@@ -1,80 +1,80 @@
-﻿@page "/Dashboard"
+﻿@page "/"
 
 <PageTitle>Dashboard</PageTitle>
 
-    <!-- content -->
-    <div class="container mt-5">
-        <h2>Dashboard</h2>
-        <p class="text-secondary"><em>Overview of your Internet of Things</em></p>
+<!-- content -->
+<div class="container mt-5">
+    <h2>Dashboard</h2>
+    <p class="text-secondary"><em>Overview of your Internet of Things</em></p>
 
-        <div class="row mt-5">
+    <div class="row mt-5">
 
-            <!-- stats -->
-            <div class="col-3">
-                <div class="card shadow">
-                    <div class="card-body">
-                        <div class="pb-3 mb-4">
-                            <h4 class="card-title mb-0">
-                                <i class="bi-bar-chart-fill"></i>
-                                Daily Stats
-                            </h4>
-                            <p class="card-text text-muted">With supporting text</p>
-                        </div>
-
-                        <!-- rows for testing -->
-                        <StatsItem Title="Total Devices" LeadIn="Total Devices" Value="8"/>
-                        <StatsItem Title="New Devices" LeadIn="Number of new devices" Value="8"/>
-                        <StatsItem Title="C2D Count" LeadIn="Cloud to Device messages" Value="48"/>
-
+        <!-- stats -->
+        <div class="col-3">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="pb-3 mb-4">
+                        <h4 class="card-title mb-0">
+                            <i class="bi-bar-chart-fill"></i>
+                            Daily Stats
+                        </h4>
+                        <p class="card-text text-muted">With supporting text</p>
                     </div>
+
+                    <!-- rows for testing -->
+                    <StatsItem Title="Total Devices" LeadIn="Total Devices" Value="8"/>
+                    <StatsItem Title="New Devices" LeadIn="Number of new devices" Value="8"/>
+                    <StatsItem Title="C2D Count" LeadIn="Cloud to Device messages" Value="48"/>
+
                 </div>
             </div>
+        </div>
 
-            <!-- index -->
-            <div class="col">
-                <div class="card shadow">
-                    <div class="card-body">
+        <!-- index -->
+        <div class="col">
+            <div class="card shadow">
+                <div class="card-body">
 
-                        <div class="row pb-3">
-                            <div class="col">
-                                <h4 class="card-title mb-0">List of Devices</h4>
-                                <p class="card-text text-muted">With supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="col-2">
-                                <a href="#" class="btn btn-primary float-end">New Device</a>
-                            </div>
+                    <div class="row pb-3">
+                        <div class="col">
+                            <h4 class="card-title mb-0">List of Devices</h4>
+                            <p class="card-text text-muted">With supporting text below as a natural lead-in to additional content.</p>
                         </div>
-
-                        <table class="table mt-3">
-                            <thead>
-                                <tr>
-                                    <th scope="col"><i class="bi-stack me-2"></i>Device ID</th>
-                                    <th scope="col">Location</th>
-                                    <th scope="col">Date</th>
-                                    <th scope="col">Type</th>
-                                    <th scope="col">Status</th>
-                                    <th scope="col"></th>
-                                </tr>
-                            </thead>
-
-                            <tbody>
-
-                                <!-- rows for testing -->
-                                <TableRowItem UUID="8284cdfc-6c73-48c4-906e-188c9a14a8fa" Location="New York" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
-                                <TableRowItem UUID="73259e61-766c-4c19-c4f4-63aca4ae4ac9" Location="London" Date="2022-10-10" Type="Weather Sensor" IsOnline=false />
-                                <TableRowItem UUID="63af12da-41f2-414e-850e-53ed97667239" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=false />
-                                <TableRowItem UUID="6793ead6-2133-4b8f-b6e5-b682b9e8edb4" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
-                                <TableRowItem UUID="f7c129c3-7981-4075-8345-68af925e831f" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
-                                <TableRowItem UUID="6b7ea858-28d3-4e63-99a7-c3bd80042c71" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
-
-                            </tbody>
-                        </table>
-
+                        <div class="col-2">
+                            <a href="#" class="btn btn-primary float-end">New Device</a>
+                        </div>
                     </div>
+
+                    <table class="table mt-3">
+                        <thead>
+                            <tr>
+                                <th scope="col"><i class="bi-stack me-2"></i>Device ID</th>
+                                <th scope="col">Location</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">Type</th>
+                                <th scope="col">Status</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+                            <!-- rows for testing -->
+                            <TableRowItem UUID="8284cdfc-6c73-48c4-906e-188c9a14a8fa" Location="New York" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
+                            <TableRowItem UUID="73259e61-766c-4c19-c4f4-63aca4ae4ac9" Location="London" Date="2022-10-10" Type="Weather Sensor" IsOnline=false />
+                            <TableRowItem UUID="63af12da-41f2-414e-850e-53ed97667239" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=false />
+                            <TableRowItem UUID="6793ead6-2133-4b8f-b6e5-b682b9e8edb4" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
+                            <TableRowItem UUID="f7c129c3-7981-4075-8345-68af925e831f" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
+                            <TableRowItem UUID="6b7ea858-28d3-4e63-99a7-c3bd80042c71" Location="Stockholm" Date="2022-10-05" Type="Weather Sensor" IsOnline=true />
+
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
         </div>
     </div>
+</div>
 
 @code {
 
