@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32516.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IoT Manager", "IoT Manager\IoT Manager.csproj", "{23A6AA39-C4FB-4176-BEEE-69E497123085}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{4CC691DE-5E1C-4098-9522-2780DCF02150}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{23A6AA39-C4FB-4176-BEEE-69E497123085}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23A6AA39-C4FB-4176-BEEE-69E497123085}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23A6AA39-C4FB-4176-BEEE-69E497123085}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CC691DE-5E1C-4098-9522-2780DCF02150}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CC691DE-5E1C-4098-9522-2780DCF02150}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CC691DE-5E1C-4098-9522-2780DCF02150}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CC691DE-5E1C-4098-9522-2780DCF02150}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

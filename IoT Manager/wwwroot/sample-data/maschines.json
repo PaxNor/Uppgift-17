@@ -1,0 +1,44 @@
+[
+  {
+    "uuid": "8284cdfc-6c73-48c4-906e-188c9a14a8fa",
+    "location": "New York",
+    "date": "2022-10-05",
+    "type": "Weather Sensor",
+    "isonline": true
+  },
+  {
+    "uuid": "73259e61-766c-4c19-c4f4-63aca4ae4ac9",
+    "location": "London",
+    "date": "2022-10-10",
+    "type": "Weather Sensor",
+    "isonline": true
+  },
+  {
+    "uuid": "63af12da-41f2-414e-850e-53ed97667239",
+    "location": "Madrid",
+    "date": "2022-10-03",
+    "type": "Weather Sensor",
+    "isonline": true
+  },
+  {
+    "uuid": "6793ead6-2133-4b8f-b6e5-b682b9e8edb4",
+    "location": "Berlin",
+    "date": "2022-09-20",
+    "type": "Weather Sensor",
+    "isonline": true
+  },
+  {
+    "uuid": "f7c129c3-7981-4075-8345-68af925e831f",
+    "location": "Stockholm",
+    "date": "2022-09-15",
+    "type": "Weather Sensor",
+    "isonline": true
+  },
+  {
+    "uuid": "6b7ea858-28d3-4e63-99a7-c3bd80042c71",
+    "location": "Paris",
+    "date": "2022-09-08",
+    "type": "Weather Sensor",
+    "isonline": true
+  }
+]
